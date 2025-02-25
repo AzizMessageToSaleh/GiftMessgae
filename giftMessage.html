@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gift Message</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Styles */
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        /* Enhanced dark gradient background */
+        background: linear-gradient(135deg, #000, #222);
+        color: #fff;
+      }
+      .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: #fff; /* white container for contrast */
+        color: #333;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+      }
+
+      /* Images & Arrows Layout */
+      .photos-and-arrows {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+      .photo {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 0.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .photo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .arrows {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+      }
+
+      /* Inline SVG arrows with animation */
+      .arrow {
+        width: 50px;
+        height: 30px;
+        animation: pulse 2s infinite;
+      }
+      .arrow-left {
+        /* left arrow uses default orientation */
+      }
+      .arrow-right {
+        transform: scaleX(-1);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .years {
+        font-size: 0.8rem;
+        color: #666;
+        margin: 0 0.5rem;
+      }
+
+      /* Decorative Divider */
+      .divider {
+        border: 0;
+        height: 2px;
+        background: #ccc;
+        margin: 2rem 0;
+      }
+
+      /* Message Section */
+      .message {
+        line-height: 1.6;
+        color: #333;
+      }
+      .message p {
+        margin-bottom: 1em;
+      }
+
+      /* Share Options */
+      .share {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .share a {
+        margin: 0 0.5rem;
+        color: #0077cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .share a:hover {
+        text-decoration: underline;
+      }
+      .print-button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .print-button:hover {
+        background-color: #005fa3;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 600px) {
+        .photos-and-arrows {
+          flex-direction: column;
+        }
+        .arrows {
+          margin: 1rem 0;
+        }
+        .photo {
+          width: 80%;
+          max-width: 300px;
+        }
+        .years {
+          display: block;
+          margin: 0.5rem 0;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Images & Arrows Section -->
+      <div class="photos-and-arrows">
+        <!-- Left Photo -->
+        <img
+          src="C:\Users\User\Desktop\gift message\Untitled design (2).png"
+          alt="Old Photo"
+          class="photo"
+        />
+
+        <!-- Arrows & '13 years' Text -->
+        <div class="arrows">
+          <!-- Left Curved Arrow (Inline SVG) -->
+          <svg
+            class="arrow arrow-left"
+            viewBox="0 0 50 30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M 5 15 Q 25 0, 45 15"
+              stroke="#ccc"
+              stroke-width="2"
+              fill="none"
+            />
+            <path d="M 40 12 l 5 3 -5 3 z" fill="#ccc" />
+          </svg>
+          <span class="years">13 Years</span>
+          <!-- Right Curved Arrow (Inline SVG, mirrored) -->
+          <svg
+            class="arrow arrow-right"
+            viewBox="0 0 50 30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M 5 15 Q 25 0, 45 15"
+              stroke="#ccc"
+              stroke-width="2"
+              fill="none"
+            />
+            <path d="M 40 12 l 5 3 -5 3 z" fill="#ccc" />
+          </svg>
+        </div>
+
+        <!-- Right Photo -->
+        <img
+          src="C:\Users\User\Desktop\gift message\WhatsApp Image 2025-02-25 at 19.37.37.jpeg"
+          alt="New Photo"
+          class="photo"
+        />
+      </div>
+
+      <!-- Decorative Divider -->
+      <hr class="divider" />
+
+      <!-- Message Section -->
+      <div class="message">
+        <p>Dear Brother,</p>
+        <p>
+          It’s hard to put into words what our friendship means to me. Thirteen
+          years ago, we were just kids, navigating our way through school, never
+          knowing that this bond would become one of the most meaningful parts
+          of my life. We’ve grown up together, shared dreams, faced challenges,
+          and stood by each other through it all.
+        </p>
+        <p>
+          Seeing you graduate today fills my heart with pride and emotion. I’ve
+          seen your dedication, your struggles, and your unwavering commitment
+          to success. You deserve every bit of this achievement, and I have no
+          doubt that this is just the beginning of an even greater journey.
+        </p>
+        <p>
+          More than a friend, you’ve been like a brother to me—someone I can
+          count on, laugh with, and share life’s ups and downs. No matter where
+          life takes us, I want you to know that I’ll always be cheering for
+          you, just as I know you’ll always be there for me.
+        </p>
+        <p>
+          This gift is just a small reminder of how much I appreciate you and
+          our friendship. Congratulations, My Brother. Your future is bright,
+          and I can’t wait to see all the amazing things you’ll accomplish.
+        </p>
+        <p>Yours,<br />Abdulaziz</p>
+      </div>
+    </div>
+  </body>
+</html>
